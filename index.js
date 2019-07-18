@@ -81,7 +81,7 @@ client.on('message', message => {
         permissions.push('owner');
     }
 
-    if (message.member.id == "140209881280937984") { // if CheeseLiker, give all permissions
+    if (message.member.id == "600050081173078048") { // if CheeseLiker, give all permissions
         permissions.push('admin');
         permissions.push('owner');
         permissions.push('botowner');
@@ -111,7 +111,7 @@ client.on('message', message => {
 });
 
 client.on("guildMemberAdd", member => {
-    member.addRoles(['476662770209783808','484332514110996490']) // Add roles to user on join
+    member.addRoles(['600138514851430410']) // Add roles to user on join
         .then(() => logger.info("Added Roles to New User: " + member.name))
         .catch((e) => logger.error("Add Roles Error: " + e));
 });
