@@ -203,7 +203,7 @@ function postDiscord(server, twitchChannel, err, res) {
             const guild = client.guilds.find(guild => guild.name === server.name);
             const discordChannel = guild.channels.find(discordChannel => discordChannel.name === server.discordChannels[0]);
             const discordEmbed = createEmbed(server, twitchChannel, res);
-            const discordLive = res.stream.channel.display_name + " is <@&484332514110996490>!"
+            const discordLive = res.stream.channel.display_name + " is <@&600138514851430410>!"
 
             discordChannel.fetchMessage(twitchChannel.messageid).then( // edit/update the message
                 message => message.edit(discordLive, { embed: discordEmbed }).then((message) => {
