@@ -183,7 +183,7 @@ function postDiscord(server, twitchChannel, err, res) {
             const guild = client.guilds.find(guild => guild.name === server.name);
             const discordChannel = guild.channels.find(discordChannel => discordChannel.name === server.discordChannels[0]);
             const discordEmbed = createEmbed(server, twitchChannel, res);
-            const discordPing = res.stream.channel.display_name + " is <@&484332514110996490>!" // message with @mention used before embed
+            const discordPing = res.stream.channel.display_name + " is <@&600138514851430410>!" // message with @mention used before embed
 
             discordChannel.send(discordPing, { embed: discordEmbed }).then( // send the Discord Live Message
                 (message) => {
